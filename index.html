@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" ></script>
+    <link rel="stylesheet" href="css/font.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     
 
 
@@ -19,15 +21,20 @@
 
 
 <body class="container">
+
+<div id="progressbar"></div>
+<div id="scrollPath"></div>    
+
     
     <div class="row">
     <div class="col-mod-1 caja1"><img src="img/1.svg"></div>
     <div class="col mod-11 caja2">
+        
         <div class="boton">
             &nabla; &nabla;&nabla;<button><h1><a href="#perfil">Perfil</a></h1></button>&nabla;&nabla;&nabla;&nabla;
             &nabla; &nabla;<button><h1><a href="#habilidades">Habilidades</a></h1></button>&nabla;&nabla;&nabla;&nabla;
             &nabla; &nabla;<button><h1><a href="#creatividad">Creatividad</a></h1></button>&nabla;&nabla;&nabla;&nabla;
-            &nabla; &nabla;<button><h1><a href="#contacto">Contacto</a></h1></button>&nabla;&nabla;&nabla;&nabla;
+            &nabla; &nabla;<button></button><h1><a href="#contacto">Contacto</a></h1></button>&nabla;&nabla;&nabla;&nabla;
         
         </div>
          <div class="menu-btn">
@@ -36,7 +43,8 @@
 </div>
 
     </div>
-</div>
+
+
  
 <div class="row">
     <div class="col-md-1"></div>
@@ -50,9 +58,71 @@
     <div class="animate__animated animate__pulse"><img class="img" src="img/2.png"></div>
     </div>
 
+    </div>
+<div class="container2"> <article>
+        <h4> A R T E </h4>
+    </article>
+</div>
+ <section>  
+<div class="container1">
     
-   
+   <div class="gooey">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div> 
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div> 
+    
+    
+   </div>
 
+</div>
+</section>
+<svg>
+    <filter id="gooey">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+
+        <feColorMatrix values="
+        1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        0 0 0 20 -10
+        "/>
+    </filter>
+</svg>
+   
+<br>
+
+<br>
+
+
+
+
+<br>
+
+
+
+<br>
+
+
+<br>
+
+
+
+
+<br>
+
+
+
+
+<br>
+
+
+
+
+
+
+
+<br>
  
     <main>
 		<div class="contenedor"id="perfil">
@@ -63,6 +133,7 @@
 
 
 			<article>
+                
 				<h2>Selena Ortiz </h2>
 				<p>Me caracterizo por hallar soluciones creativas frente a problemas de contenido grafico, creando piezas modernas llenas de originalidad, que transmitan emociones y las comuniquen acertivamente.</p><br />
 	
@@ -72,7 +143,7 @@
             
         </div>
         <div class="bottoncv">
-        <a href="img/curriculum.pdf" target="_bank" class="cvdowland">DESCARGAR</a></div>
+        <a href="img/curriculum.pdf" target="_bank" class="cvdowland">Hoja de vida</a></div>
 
 	</main>
 
@@ -152,7 +223,7 @@
                 <span class="bar"><span class="productividad"></span></span>
 
                 <li>
-                    <img class="iconos1" src="" alt="">
+                    
 
                 
 
@@ -217,7 +288,7 @@
                 <span class="bar"><span class="css"></span></span>
 
                 <li>
-                    <img class="iconos1" src="img/oficina.png" alt="">
+                    
 
                    
             
@@ -474,73 +545,111 @@ data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
    <img src="img/todo/25.png" alt="">
 </div>
 </div>
-
-
-
-
 		</section>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-		<section class="overlay" id="overlay">
-			<div class="contenedor-img">
-				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
-				<img src="" alt="">
-			</div>
-			<p class="descripcion"></p>
-		</section>
 
 		
     
-    <form class="form1" action="" id="contacto">
-        
-        <h3>Contacto</h2>
-         <input type="text"name="Nombre" placeholder="Nombre">
-         <input type="text"name="Correo" placeholder="Correo">
-         <input type="Mensaje"name="Escriba aqui su mensaje" placeholder="Telefono">
-         <textarea name="Mensaje" placeholder="Escriba aqui su mensaje"></textarea>
-
-         <input type="button" value="Enviar" id="boton"> </input>
+        <div class="container3" id="contacto">
     
-    </form>
+    
+    
+   
+            <div class="contact-box">
+                <div class="left">
+                    <br> 
     <br>
-
-
-
-
-
-     <br>
     <br>
-    <footer class="contenedor">
-			<div class="redes-sociales">
-				<div class="contenedor-icono">
-					<a href="https://twitter.com/selenita_morita" target="_blank" class="twitter">
-						<i class="fab fa-twitter"></i>
-					</a>
-				</div>
-				<div class="contenedor-icono">
-					<a href="https://www.facebook.com/selena.ortiz.3154284" target="_blank" class="facebook">
-						<i class="fab fa-facebook-f"></i>
-					</a>
-				</div>
-				<div class="contenedor-icono">
-					<a href="https://www.instagram.com/t_r_a_k_e_t_e_r_a/?hl=es-la" target="_blank" class="instagram">
-						<i class="fab fa-instagram"></i>
-					</a>
-				</div>
-			</div>
-			<div class="creado-por">
-				<p>  2020 /  <a href="#">Selena Ortiz</a></p>
-			</div>
-		</footer>
-    </div>
+    <br>
+    <br> 
+    
+    
+    
+    
+                    <h6>INFORMACIÓN</h6>
+            
+                    <ul class="info">
+                        <li>
+                            <span><img src="img/iconos/correo.png"></span>
+                            <span>Ortizselena432@gamil.com</span>
+                        </li>
+
+                        <li>
+                            <span><img src="img/iconos/tel.png"></span>
+                            <span>3174449941</span>
+                        </li>
+                    </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+
+           
+                    
+                    <ul class="sci">
+                        
+    
+                        <li><a href="#"><img src="img/iconos/7.png"></a></li>
+            
+                    </ul>
+                </div>
+                <div class="right">
+                    <br>
+                    <br>
+
+                    <h6>CONTACTO</h6>
+                    <input type="text" class="field" placeholder="Nombre">
+                    <input type="text" class="field" placeholder="Correo">
+                    <input type="text" class="field" placeholder="Telefono">
+                    <textarea placeholder="Mensaje" class="field"></textarea>
+                    <button class="btn">Enviar</button>
+                </div>
+            </div>
+        </div>
+
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+<div class="social">
+    <ul>
+        <li><a href="https://www.behance.net/selenaortizz" class="icon-facebook" ><img src="img/redes/behance2.png" ></a></li>
+        <li><a href="https://www.facebook.com/selena.ortiz.3154284"class="icon-twitter"  ><img src="img/redes/facebook2.png" ></a></li>
+        <li><a href="https://www.instagram.com/t_r_a_k_e_t_e_r_a/?hl=es-la" class="icon-googleplus " ><img src="img/redes/instagram.png" ></a></li>
+        <li><a href="https://open.spotify.com/user/213zj42vkgzhuh5zp5bzbk4sa?si=hdF1AXGpQ32zcvI8Q4fw2Q" class="icon-pinterest" ><img src="img/redes/spotify.png"></a></li>
+        <li><a href="https://twitter.com/selenita_morita" class="icon-mail"><img src="img/redes/twitter.png"></a></li>
+    </ul>
+</div>
+<span class="ir-arriba icon-arrow-up2"> <img src="img/redes/flecha-arriba2.png"></span>
+
+
+
+
+
+
+
+    
 
 	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
 	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
-	<script src="js/main.js"></script>
-    <script src="js/wow.min.js"></script>
-            <script>
-                new WOW().init();
-            </script>
-            <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/main.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $(".gooey div").draggable();
+        })
 
+
+    </script>
 </body>
 </html>
